@@ -36,12 +36,10 @@ namespace Sql_Browser
             this.Connection.Close();
 
             return value;
-
         }
 
         public DataTable GetDataTable()
         {
-
             DataTable myTable = new DataTable();
             SqlDataAdapter adapter = new SqlDataAdapter(this.Command);
             adapter.Fill(myTable);
